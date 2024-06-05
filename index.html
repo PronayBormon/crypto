@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+.serv-item .text {
+color: #4e4e4e;
+}
+
+.serv-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.serv-icon i {
+color: #1a6ca9;
+font-size: 28px;
+}
+
+</style>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>Crypto Mobile Template</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+	<!-- Animate css file for css3 animations. for more : https://daneden.github.io/animate.css -->
+	<!-- Only use animate action. If you dont use animation, you don't have to add.-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/cryptocoins.css">
+	<link rel="stylesheet" type="text/css" href="plugins/c3-chart/c3.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+	<!-- Swiper slider css file -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/jqcandlestick.css">
+
+	<!--turbo slider plugin css file -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+
+</head>
+
+<body>
+	
+	<div class="wrapper ">
+		<div class="nav-menu">
+<nav class="menu">
+
+	<!-- Menu navigation start -->
+	<div class="nav-container">
+		<ul class="main-menu">
+			<li class="">
+				<a href='index.html'><img src="img/content/icons/1.png" alt=""><strong class="special">Dashboard</strong> </a>
+			</li>
+			<li class="">
+				<a href='wallet.html'><img src="img/content/icons/2.png" alt=""><strong class="special">My Wallet</strong> </a>
+			</li>
+			<li class="">
+				<a href='kyc.html'><img src="img/16.png" alt=""><strong class="special">KYC</strong> </a>
+			</li>
+			<li class="">
+				<a href='trading.html'><img src="img/content/icons/3.png" alt=""><strong class="special">Crypto Trade</strong> </a>
+			</li>
+			<li class="">
+				<a href='buy-sell.html'><img src="img/content/icons/6.png" alt=""><strong class="special">Send/Receive</strong> </a>
+			</li>
+			<li class="">
+				<a href='profile.html'><img src="img/content/icons/5.png" alt=""><strong class="special">Trader Profile</strong> </a>
+			</li>
+			<li class="">
+				<a href='affiliate.html'><img src="img/content/icons/4.png" alt=""><strong class="special">Affiliate System</strong> </a>
+			</li>
+			<li class="">
+				<a href='setting.html'><img src="img/content/icons/11.png" alt=""><strong>Community</strong> </a>
+			</li>
+			<li>
+				<a href="javascript:void(0);"><img src="img/content/icons/9.png" alt=""><strong class="special">Login/Register</strong> <span class="fa fa-angle-down"></span></a>
+				<ul>
+					<li><a data-loader='show' href='login.html'>Login</a></li>
+					<li><a data-loader='show' href='signup.html'>Register</a></li>
+					<li><a data-loader='show' href='forgot-password.html'>My Wallet</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="withdrawl.html"><img src="img/content/icons/8.png" alt=""> <strong class="special">Withdrawl</strong></a>
+			</li>
+			
+			
+			<li>
+				<a href="post.html"><img src="img/content/icons/10.png" alt=""><strong class="special">Post</strong></a>
+			</li>
+			<li class="">
+				<a href="#"><img src="img/content/icons/15.png" alt=""><strong class="special"> Pages</strong> <span class="fa fa-angle-down"></span></a>
+				<ul>
+					<li class=""><a data-loader='show' href='profile.html'>User Profile</a></li>
+					<li><a data-loader='show' href='search-result.html'>Search Results</a></li>
+					<li><a data-loader='show' href='contact.html'>Contact</a></li>
+					<li><a data-loader='show' href='blank.html'>Blank Page</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+<!-- Menu navigation end -->
+</nav>
+		</div>
+		<div class="wrapper-inline">
+			<!-- Header area start -->
+			<header class="no-background"> <!-- extra class no-background -->
+
+				<div class="search-button" data-search="open">
+					<img src="img/content/notification1.png" class="not-icon1" alt="">
+					<img src="img/content/notification2.png" class="not-icon2" alt="">
+				</div>
+
+				<div class="navi-menu-button">
+					<em></em>
+					<em></em>
+					<em></em>
+				</div>
+
+			</header>
+			<!-- Header area end -->
+
+			
+
+			<!--NOTIFICATION BOX CONTENT START-->
+			<div class="search-form">
+				<span class="close-search-form" data-search="close"><i class="fa fa-times"></i> </span>
+				<form>
+					<div class="search-input">
+						<input type="text" name="q" class="form-element" placeholder="Search...">
+						<button type="submit" class="search-input-btn"><i class="fa fa-arrow-right"></i></button>
+					</div>
+				</form>
+			    <ul class="notification-list list-unstyled">
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <div class="">
+                              <h5 class="coin-name">You have 3 notifications</h5>
+                            </div>
+                          </div>
+                          <div>
+                            <a href=""><small class="text-muted d-block">mark all as read</small></a>
+                          </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon available">
+	                                <i class="fa fa-check"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Successful transaction 0.01 BTC</h4>
+	                              <small class="text-muted">15 min ago</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon away">
+	                                <i class="fa fa-clock-o"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">4 of Pending Transactions!</h4>
+	                              <small class="text-muted"> 12 hours ago</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon busy">
+	                                <i class="fa fa-times"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Cancelled Order of 200 ICO</h4>
+	                              <small class="text-muted">15 Feb - 08:34</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <div class="notice-icon available">
+	                                <i class="fa fa-check"></i>
+	                            </div>
+	                            <div class="ml-10">
+	                              <h4 class="coin-name">Great Speed Notify of 1.34 LTC</h4>
+	                              <small class="text-muted">24 jan - 20:43</small>
+	                            </div>
+                            </div>
+                        </div>
+					</li>
+					<li>
+						<div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+	                            <a href="" class="text-muted">Read all notifications</a>
+                            </div>
+                        </div>
+					</li>
+					
+				</ul>
+			</div>
+			<!--NOTIFICATION BOX CONTENT END-->
+
+<div class="bottom-menu-section">
+	<ul class="bottom-menu list-unstyled list-inline">
+		<li>
+			<a href='index.html'>
+				<i class="fa-duotone fa-home" style="font-size: 25px; color: #1a6ca9; width: 100%;text-align: center;"></i>
+				<p>Home</p>
+			</a>
+		</li>
+		<li>
+			<a href='wallet.html'>
+				<i class="fa-duotone fa-wallet" style="font-size: 25px; color: #1a6ca9; width: 100%;text-align: center;"></i>
+				<p>Wallet</p>
+			</a>
+		</li>
+		<li>
+			<a class="b-m-pluse" href="setting.html"><i class="fa fa-plus"></i></a>
+		</li>
+		<li>
+			<a href='ledger.html'>
+				<i class="fa-duotone fa-file" style="font-size: 25px; color: #1a6ca9; width: 100%;text-align: center;"></i>
+				<p>Ledger</p>
+			</a>
+		</li>
+		<li>
+			<a href='profile.html'>
+				<i class="fa-duotone fa-user" style="font-size: 25px; color: #1a6ca9; width: 100%;text-align: center;"></i>
+				<p>Profile</p>
+			</a>
+		</li>
+	</ul>	
+</div>
+
+<!-- Page content start -->
+<main class="margin mt-0">
+
+	<div class="dash-balance">
+		<div class="d-flex align-items-center mt-30">
+                        <div class="d-flex flex-grow">
+                          <div class="mr-auto">
+                            <h1 class="b-val"> $2,589.50 </h1>
+                            <p class="g-text mb-0">Current Price</p>
+                          </div>
+                          <div class="ml-auto align-self-end">
+                            <a class='profile-av' href='profile'><img src="img/content/avatar/avatar.png"></a>
+                          </div>
+                        </div>
+                     </div>
+
+                     
+	</div>
+
+	<section class="bal-section container">
+		
+		<div class="resources-card-wrapper">
+		    			<div class="wallet-card mr-10 round">
+	                        <div class="flex-column flex-md-row">
+	                          <img src="img/5001578.png" class="max50" alt="">
+	                          <h3 class="">Maximum Supply</h3>
+	                          <p class="mb-0 font-weight-medium"><i class="txt-green fa fa-arrow-up mr-10"></i>6 Billion </p>
+	                        </div>
+	                    </div>
+			
+	                    <div class="wallet-card ml-10">
+	                        <div class="flex-column flex-md-row">
+	                          <img src="img/1027961.png" class="max50" alt="">
+	                          <h3 class="">Total Supply</h3>
+	                          <p class="mb-0 font-weight-medium"><i class="txt-red fa fa-arrow-down mr-10"></i>1.2629 ETH </p>
+	                        </div>
+	                    </div>
+		</div>
+		<div class="resources-card-wrapper mt-15">
+		    			<div class="wallet-card mr-10">
+	                        <div class="flex-column flex-md-row">
+	                          <img src="img/return-on-investment.png" class="max50" alt="">
+	                          <h3 class="">Circulating Supply</h3>
+	                          <p class="mb-0 font-weight-medium"><i class="txt-red fa fa-arrow-down mr-10"></i>8,954.3 XRP </p>
+	                        </div>
+	                    </div>
+			
+	                    <div class="wallet-card ml-10">
+	                        <div class="flex-column flex-md-row">
+	                          <img src="img/2422796.png" class="max50" alt="">
+	                          <h3 class="">Market Cap</h3>
+	                          <p class="mb-0 font-weight-medium"><i class="txt-green fa fa-arrow-up mr-10"></i>1.269 DASH </p>
+	                        </div>
+	                    </div>
+		</div>
+	</section>
+
+	<div class="services-bulk">
+		<div class="content-row">
+			<div class="serv-item " >
+				<a href="" class="serv-icon active" style="box-shadow: 0px 2px 8px 2px #1a6ca960;background-color: #1a6ca9;">
+					<img src="img/start.png" style="width: 40px;" alt="">
+				</a>
+				<span class="text">Start</span>
+			</div>
+			<div class="serv-item">
+				<a href="" class="serv-icon" style="box-shadow: 0px 2px 8px 2px #1a6ca960;background-color: #1a6ca9;"><img src="img/fast.png" style="width: 40px;" alt=""></a>
+				<span class="text">Fast</span>
+			</div>
+			<div class="serv-item">
+				<a href="" class="serv-icon" style="box-shadow: 0px 2px 8px 2px #1a6ca960;background-color: #1a6ca9;"><img src="img/super.png" class="mb-5" alt=""></a>
+				<span class="text">Super</span>
+			</div>
+			<div class="serv-item">
+				<a href="" class="serv-icon" style="box-shadow: 0px 2px 8px 2px #1a6ca960;background-color: #1a6ca9;"><img src="img/platinum.png" class="mb-5" alt=""></a>
+				<span class="text">Platinum</span>
+			</div>
+		</div>
+	</div>
+
+	<!--Graph Start-->
+	
+	<section class="container">
+        <div class="content"> 
+         	<h4 class="title-main">Chart</h4>
+		    <div class="c-panel pl-0">
+		    	
+		        <div class="row align-items-center">
+		        	<div class="col-12">
+		        		<div class="advertising-wrapper">
+							<div id="areaSplineGraph" class="c3" style="max-height: 320px; position: relative;"><svg width="681" height="320" style="overflow: hidden;"><defs><clippath id="c3-1713881742048-clip"><rect width="629" height="266"></rect></clippath><clippath id="c3-1713881742048-clip-xaxis"><rect x="-51" y="-20" width="711" height="70"></rect></clippath><clippath id="c3-1713881742048-clip-yaxis"><rect x="-49" y="-4" width="70" height="290"></rect></clippath><clippath id="c3-1713881742048-clip-grid"><rect width="629" height="266"></rect></clippath><clippath id="c3-1713881742048-clip-subchart"><rect width="629"></rect></clippath></defs><g transform="translate(50.5,4.5)"><text class="c3-text c3-empty" text-anchor="middle" dominant-baseline="middle" x="314.5" y="133" style="opacity: 0;"></text><rect class="c3-zoom-rect" width="629" height="266" style="opacity: 0;"></rect><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip)" class="c3-regions" style="visibility: visible;"></g><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-grid)" class="c3-grid" style="visibility: visible;"><g class="c3-xgrid-focus"><line class="c3-xgrid-focus" x1="-10" x2="-10" y1="0" y2="266" style="visibility: hidden;"></line></g></g><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip)" class="c3-chart"><g class="c3-event-rects c3-event-rects-single" style="fill-opacity: 0;"><rect class=" c3-event-rect c3-event-rect-0" x="-11.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-1" x="26.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-2" x="65.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-3" x="103.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-4" x="142.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-5" x="180.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-6" x="219.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-7" x="257.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-8" x="296.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-9" x="335.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-10" x="373.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-11" x="412.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-12" x="450.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-13" x="489.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-14" x="527.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-15" x="566.5" y="0" width="37" height="266"></rect><rect class=" c3-event-rect c3-event-rect-16" x="604.5" y="0" width="37" height="266"></rect></g><g class="c3-chart-bars"><g class="c3-chart-bar c3-target c3-target-data1" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-data1 c3-bars c3-bars-data1" style="cursor: pointer;"></g></g><g class="c3-chart-bar c3-target c3-target-data2" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-data2 c3-bars c3-bars-data2" style="cursor: pointer;"></g></g></g><g class="c3-chart-lines"><g class="c3-chart-line c3-target c3-target-data1" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-data1 c3-lines c3-lines-data1"><path class=" c3-shape c3-shape c3-line c3-line-data1" d="M7,223.4866310160428Q37.3,184.16176470588232,45,179.20187165775397C56.550000000000004,171.76203208556146,72.45,173.6219919786096,84,173.88770053475935S110.45,183.63034759358288,122,180.97326203208556S149.45,159.36229946524062,161,156.17379679144383S187.45,159.71657754010695,199,159.71657754010695S226.45,158.83088235294116,238,156.17379679144383S264.45,146.7854278074866,276,142.0026737967914S303.3,127.47727272727272,315,124.28877005347593S342.45,124.73161764705883,354,120.74598930481284S380.45,100.37500000000001,392,97.71791443850269S419.45,104.36062834224597,431,103.03208556149731S457.45,91.78375668449198,469,88.86096256684492S496.45,88.06383689839572,508,83.54679144385027S534.45,63.53008021390374,546,58.74732620320855S573.45,56.71022727272728,585,51.661764705882355Q592.7,48.29612299465241,623,25.09090909090907" style="stroke: rgb(247, 130, 170); opacity: 1;"></path></g><g class=" c3-shapes c3-shapes-data1 c3-areas c3-areas-data1"><path class=" c3-shape c3-shape c3-area c3-area-data1" style="fill: rgb(247, 130, 170); opacity: 0.2;" d="M7,223.4866310160428Q37.3,184.16176470588232,45,179.20187165775397C56.550000000000004,171.76203208556146,72.45,173.6219919786096,84,173.88770053475935S110.45,183.63034759358288,122,180.97326203208556S149.45,159.36229946524062,161,156.17379679144383S187.45,159.71657754010695,199,159.71657754010695S226.45,158.83088235294116,238,156.17379679144383S264.45,146.7854278074866,276,142.0026737967914S303.3,127.47727272727272,315,124.28877005347593S342.45,124.73161764705883,354,120.74598930481284S380.45,100.37500000000001,392,97.71791443850269S419.45,104.36062834224597,431,103.03208556149731S457.45,91.78375668449198,469,88.86096256684492S496.45,88.06383689839572,508,83.54679144385027S534.45,63.53008021390374,546,58.74732620320855S573.45,56.71022727272728,585,51.661764705882355Q592.7,48.29612299465241,623,25.09090909090907L623,266Q592.7,266,585,266C573.45,266,557.55,266,546,266S519.55,266,508,266S480.55,266,469,266S442.55,266,431,266S403.55,266,392,266S365.55,266,354,266S326.7,266,315,266S287.55,266,276,266S249.55,266,238,266S210.55,266,199,266S172.55,266,161,266S133.55,266,122,266S95.55,266,84,266S56.550000000000004,266,45,266Q37.3,266,7,266Z"></path></g><g class=" c3-selected-circles c3-selected-circles-data1"></g><g class=" c3-shapes c3-shapes-data1 c3-circles c3-circles-data1" style="cursor: pointer;"><circle class=" c3-shape c3-shape-0 c3-circle c3-circle-0" r="2.5" cx="7" cy="223.4866310160428" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-1 c3-circle c3-circle-1" r="2.5" cx="45" cy="179.20187165775397" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-2 c3-circle c3-circle-2" r="2.5" cx="84" cy="173.88770053475935" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-3 c3-circle c3-circle-3" r="2.5" cx="122" cy="180.97326203208556" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-4 c3-circle c3-circle-4" r="2.5" cx="161" cy="156.17379679144383" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-5 c3-circle c3-circle-5" r="2.5" cx="199" cy="159.71657754010695" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-6 c3-circle c3-circle-6" r="2.5" cx="238" cy="156.17379679144383" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-7 c3-circle c3-circle-7" r="2.5" cx="276" cy="142.0026737967914" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-8 c3-circle c3-circle-8" r="2.5" cx="315" cy="124.28877005347593" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-9 c3-circle c3-circle-9" r="2.5" cx="354" cy="120.74598930481284" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-10 c3-circle c3-circle-10" r="2.5" cx="392" cy="97.71791443850269" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-11 c3-circle c3-circle-11" r="2.5" cx="431" cy="103.03208556149731" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-12 c3-circle c3-circle-12" r="2.5" cx="469" cy="88.86096256684492" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-13 c3-circle c3-circle-13" r="2.5" cx="508" cy="83.54679144385027" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-14 c3-circle c3-circle-14" r="2.5" cx="546" cy="58.74732620320855" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-15 c3-circle c3-circle-15" r="2.5" cx="585" cy="51.661764705882355" style="fill: rgb(247, 130, 170); opacity: 1;"></circle><circle class=" c3-shape c3-shape-16 c3-circle c3-circle-16" r="2.5" cx="623" cy="25.09090909090907" style="fill: rgb(247, 130, 170); opacity: 1;"></circle></g></g><g class="c3-chart-line c3-target c3-target-data2" style="opacity: 1; pointer-events: none;"><g class=" c3-shapes c3-shapes-data2 c3-lines c3-lines-data2"><path class=" c3-shape c3-shape c3-line c3-line-data2" d="M7,239.42914438502675Q37.3,222.42379679144386,45,218.17245989304814C56.550000000000004,211.79545454545456,72.45,198.24431818181816,84,196.9157754010695S110.45,209.58121657754012,122,209.3155080213904S149.45,199.3957219251337,161,195.14438502673798S187.45,182.56751336898395,199,180.97326203208556S226.45,186.90741978609628,238,184.51604278074868S264.45,169.81350267379676,276,165.03074866310158S303.3,153.95955882352942,315,152.63101604278077S342.45,154.8452540106952,354,156.17379679144383S380.45,163.87934491978612,392,161.4879679144385S419.45,144.4826203208556,431,140.23128342245988S457.45,135.5370989304813,469,133.1457219251337S496.45,121.6316844919786,508,124.28877005347593S534.45,148.46824866310158,546,150.85962566844918S573.45,150.0625,585,140.23128342245988Q592.7,133.67713903743314,623,85.31818181818181" style="stroke: rgb(58, 134, 200); opacity: 1;"></path></g><g class=" c3-shapes c3-shapes-data2 c3-areas c3-areas-data2"><path class=" c3-shape c3-shape c3-area c3-area-data2" style="fill: rgb(58, 134, 200); opacity: 0.2;" d="M7,239.42914438502675Q37.3,222.42379679144386,45,218.17245989304814C56.550000000000004,211.79545454545456,72.45,198.24431818181816,84,196.9157754010695S110.45,209.58121657754012,122,209.3155080213904S149.45,199.3957219251337,161,195.14438502673798S187.45,182.56751336898395,199,180.97326203208556S226.45,186.90741978609628,238,184.51604278074868S264.45,169.81350267379676,276,165.03074866310158S303.3,153.95955882352942,315,152.63101604278077S342.45,154.8452540106952,354,156.17379679144383S380.45,163.87934491978612,392,161.4879679144385S419.45,144.4826203208556,431,140.23128342245988S457.45,135.5370989304813,469,133.1457219251337S496.45,121.6316844919786,508,124.28877005347593S534.45,148.46824866310158,546,150.85962566844918S573.45,150.0625,585,140.23128342245988Q592.7,133.67713903743314,623,85.31818181818181L623,266Q592.7,266,585,266C573.45,266,557.55,266,546,266S519.55,266,508,266S480.55,266,469,266S442.55,266,431,266S403.55,266,392,266S365.55,266,354,266S326.7,266,315,266S287.55,266,276,266S249.55,266,238,266S210.55,266,199,266S172.55,266,161,266S133.55,266,122,266S95.55,266,84,266S56.550000000000004,266,45,266Q37.3,266,7,266Z"></path></g><g class=" c3-selected-circles c3-selected-circles-data2"></g><g class=" c3-shapes c3-shapes-data2 c3-circles c3-circles-data2" style="cursor: pointer;"><circle class=" c3-shape c3-shape-0 c3-circle c3-circle-0" r="2.5" cx="7" cy="239.42914438502675" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-1 c3-circle c3-circle-1" r="2.5" cx="45" cy="218.17245989304814" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-2 c3-circle c3-circle-2" r="2.5" cx="84" cy="196.9157754010695" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-3 c3-circle c3-circle-3" r="2.5" cx="122" cy="209.3155080213904" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-4 c3-circle c3-circle-4" r="2.5" cx="161" cy="195.14438502673798" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-5 c3-circle c3-circle-5" r="2.5" cx="199" cy="180.97326203208556" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-6 c3-circle c3-circle-6" r="2.5" cx="238" cy="184.51604278074868" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-7 c3-circle c3-circle-7" r="2.5" cx="276" cy="165.03074866310158" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-8 c3-circle c3-circle-8" r="2.5" cx="315" cy="152.63101604278077" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-9 c3-circle c3-circle-9" r="2.5" cx="354" cy="156.17379679144383" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-10 c3-circle c3-circle-10" r="2.5" cx="392" cy="161.4879679144385" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-11 c3-circle c3-circle-11" r="2.5" cx="431" cy="140.23128342245988" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-12 c3-circle c3-circle-12" r="2.5" cx="469" cy="133.1457219251337" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-13 c3-circle c3-circle-13" r="2.5" cx="508" cy="124.28877005347593" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-14 c3-circle c3-circle-14" r="2.5" cx="546" cy="150.85962566844918" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-15 c3-circle c3-circle-15" r="2.5" cx="585" cy="140.23128342245988" style="fill: rgb(58, 134, 200); opacity: 1;"></circle><circle class=" c3-shape c3-shape-16 c3-circle c3-circle-16" r="2.5" cx="623" cy="85.31818181818181" style="fill: rgb(58, 134, 200); opacity: 1;"></circle></g></g></g><g class="c3-chart-arcs" transform="translate(314.5,128)"><text class="c3-chart-arcs-title" style="text-anchor: middle; opacity: 0;"></text></g><g class="c3-chart-texts"><g class="c3-chart-text c3-target c3-target-data1" style="opacity: 1; pointer-events: none;"><g class=" c3-texts c3-texts-data1"></g></g><g class="c3-chart-text c3-target c3-target-data2" style="opacity: 1; pointer-events: none;"><g class=" c3-texts c3-texts-data2"></g></g></g></g><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-grid)" class="c3-grid c3-grid-lines"><g class="c3-xgrid-lines"></g><g class="c3-ygrid-lines"></g></g><g class="c3-axis c3-axis-x" clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-xaxis)" transform="translate(0,266)" style="visibility: visible; opacity: 1;"><text class="c3-axis-x-label" transform="" x="629" dx="-0.5em" dy="-0.5em" style="text-anchor: end;"></text><g class="tick" transform="translate(7, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">0</tspan></text></g><g class="tick" transform="translate(45, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">1</tspan></text></g><g class="tick" transform="translate(84, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">2</tspan></text></g><g class="tick" transform="translate(122, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">3</tspan></text></g><g class="tick" transform="translate(161, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">4</tspan></text></g><g class="tick" transform="translate(199, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">5</tspan></text></g><g class="tick" transform="translate(238, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">6</tspan></text></g><g class="tick" transform="translate(276, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">7</tspan></text></g><g class="tick" transform="translate(315, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">8</tspan></text></g><g class="tick" transform="translate(354, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">9</tspan></text></g><g class="tick" transform="translate(392, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">10</tspan></text></g><g class="tick" transform="translate(431, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">11</tspan></text></g><g class="tick" transform="translate(469, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">12</tspan></text></g><g class="tick" transform="translate(508, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">13</tspan></text></g><g class="tick" transform="translate(546, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">14</tspan></text></g><g class="tick" transform="translate(585, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">15</tspan></text></g><g class="tick" transform="translate(623, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">16</tspan></text></g><path class="domain" d="M0,6V0H629V6"></path></g><g class="c3-axis c3-axis-y" clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-yaxis)" transform="translate(0,0)" style="visibility: visible; opacity: 1;"><text class="c3-axis-y-label" transform="rotate(-90)" x="0" dx="-0.5em" dy="1.2em" style="text-anchor: end;"></text><g class="tick" transform="translate(0,266)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">0</tspan></text></g><g class="tick" transform="translate(0,231)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">20</tspan></text></g><g class="tick" transform="translate(0,196)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">40</tspan></text></g><g class="tick" transform="translate(0,160)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">60</tspan></text></g><g class="tick" transform="translate(0,125)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">80</tspan></text></g><g class="tick" transform="translate(0,89)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">100</tspan></text></g><g class="tick" transform="translate(0,54)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">120</tspan></text></g><g class="tick" transform="translate(0,19)" style="opacity: 1;"><line x2="-6"></line><text x="-9" y="0" style="text-anchor: end;"><tspan x="-9" dy="3">140</tspan></text></g><path class="domain" d="M-6,1H0V266H-6"></path></g><g class="c3-axis c3-axis-y2" transform="translate(629,0)" style="visibility: hidden; opacity: 1;"><text class="c3-axis-y2-label" transform="rotate(-90)" x="0" dx="-0.5em" dy="-0.5em" style="text-anchor: end;"></text><g class="tick" transform="translate(0,266)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0</tspan></text></g><g class="tick" transform="translate(0,240)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.1</tspan></text></g><g class="tick" transform="translate(0,213)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.2</tspan></text></g><g class="tick" transform="translate(0,187)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.3</tspan></text></g><g class="tick" transform="translate(0,160)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.4</tspan></text></g><g class="tick" transform="translate(0,134)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.5</tspan></text></g><g class="tick" transform="translate(0,107)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.6</tspan></text></g><g class="tick" transform="translate(0,81)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.7</tspan></text></g><g class="tick" transform="translate(0,54)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.8</tspan></text></g><g class="tick" transform="translate(0,28)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">0.9</tspan></text></g><g class="tick" transform="translate(0,1)" style="opacity: 1;"><line x2="6" y2="0"></line><text x="9" y="0" style="text-anchor: start;"><tspan x="9" dy="3">1</tspan></text></g><path class="domain" d="M6,1H0V266H6"></path></g></g><g transform="translate(20.5,320.5)" style="visibility: hidden;"><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-subchart)" class="c3-chart"><g class="c3-chart-bars"></g><g class="c3-chart-lines"></g></g><g clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip)" class="c3-brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><rect class="background" x="0" width="659" style="visibility: hidden; cursor: crosshair;"></rect><rect class="extent" x="0" width="0" style="cursor: move;"></rect><g class="resize e" transform="translate(0,0)" style="cursor: ew-resize; display: none;"><rect x="-3" width="6" height="6" style="visibility: hidden;"></rect></g><g class="resize w" transform="translate(0,0)" style="cursor: ew-resize; display: none;"><rect x="-3" width="6" height="6" style="visibility: hidden;"></rect></g></g><g class="c3-axis-x" transform="translate(0,0)" clip-path="url(https://cryptooapp.netlify.appcharts#c3-1713881742048-clip-xaxis)" style="visibility: hidden; opacity: 1;"><g class="tick" transform="translate(7, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">0</tspan></text></g><g class="tick" transform="translate(45, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">1</tspan></text></g><g class="tick" transform="translate(84, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">2</tspan></text></g><g class="tick" transform="translate(122, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">3</tspan></text></g><g class="tick" transform="translate(161, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">4</tspan></text></g><g class="tick" transform="translate(199, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">5</tspan></text></g><g class="tick" transform="translate(238, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">6</tspan></text></g><g class="tick" transform="translate(276, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">7</tspan></text></g><g class="tick" transform="translate(315, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">8</tspan></text></g><g class="tick" transform="translate(354, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">9</tspan></text></g><g class="tick" transform="translate(392, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">10</tspan></text></g><g class="tick" transform="translate(431, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">11</tspan></text></g><g class="tick" transform="translate(469, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">12</tspan></text></g><g class="tick" transform="translate(508, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">13</tspan></text></g><g class="tick" transform="translate(546, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">14</tspan></text></g><g class="tick" transform="translate(585, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: none;"><tspan x="0" dy=".71em" dx="0">15</tspan></text></g><g class="tick" transform="translate(623, 0)" style="opacity: 1;"><line y2="6" x1="0" x2="0"></line><text y="9" x="0" transform="" style="text-anchor: middle; display: block;"><tspan x="0" dy=".71em" dx="0">16</tspan></text></g><path class="domain" d="M0,6V0H629V6"></path></g></g><g transform="translate(0,300)"><g class="c3-legend-item c3-legend-item-data1" style="visibility: visible; cursor: pointer;"><text x="301.0164108276367" y="9" style="pointer-events: none;">Male</text><rect class="c3-legend-item-event" x="287.0164108276367" y="-5" width="52.111968994140625" height="20" style="fill-opacity: 0;"></rect><line class="c3-legend-item-tile" x1="285.0164108276367" y1="4" x2="295.0164108276367" y2="4" stroke-width="10" style="stroke: rgb(247, 130, 170); pointer-events: none;"></line></g><g class="c3-legend-item c3-legend-item-data2" style="visibility: visible; cursor: pointer;"><text x="353.12837982177734" y="9" style="pointer-events: none;">Female</text><rect class="c3-legend-item-event" x="339.12837982177734" y="-5" width="54.85520935058594" height="20" style="fill-opacity: 0;"></rect><line class="c3-legend-item-tile" x1="337.12837982177734" y1="4" x2="347.12837982177734" y2="4" stroke-width="10" style="stroke: rgb(58, 134, 200); pointer-events: none;"></line></g></g><text class="c3-title" x="340.5" y="0"></text></svg><div class="c3-tooltip-container" style="position: absolute; pointer-events: none; display: none;"></div></div>
+						</div>
+		        	</div>
+		        	
+		        </div>     
+		    </div>
+		  			</div>
+    </section>
+
+	<!--Graph End-->
+
+   <div class="clearfix"></div>
+    <section class="bal-section container mt-30">
+		<h4 class="title-main mt-0">Cryptocoins Balance</h4>
+		<div class="resources-card-wrapper">
+			<div class="resources-card mr-10">
+	                        <div class="d-flex flex-column flex-md-row">
+	                          <img src="img/content/ex2.png" class="max-w mb-10" alt="">
+	                          <div class="d-flex flex-column ml-md-2">
+	                            <p class="text-muted mb-10 font-weight-medium">Total Income</p>
+	                            <div class="progress">
+	                                <div class="progress-bar bg-primary" role="progressbar" style="width: 57%"></div>
+	                              </div>
+	                            <h4 class="mt-10 mb-0">$2,748,98</h4>
+	                          </div>
+	                        </div>
+	                    </div>
+	                    <div class="resources-card ml-10">
+	                        <div class="d-flex flex-column flex-md-row">
+	                          <img src="img/content/ex1.png" class="max-w mb-10" alt="">
+	                          <div class="d-flex flex-column ml-md-2">
+	                            <p class="text-muted mb-10 font-weight-medium"> Expenses</p>
+	                            <div class="progress">
+	                                <div class="progress-bar bg-warning" role="progressbar" style="width: 67%"></div>
+	                              </div>
+	                            <h4 class="mt-10 mb-0">$1,643.22</h4>
+	                          </div>
+	                        </div>
+	                    </div>
+		</div>
+	</section>
+<br><br><br><br><br><br>
+</main>
+<!-- Page content end -->
+		</div>
+	</div>
+
+	<!--Page loader DOM Elements. Requared all pages-->
+	<div class="sweet-loader">
+		<div class="box">
+		  	<div class="circle1"></div>
+		  	<div class="circle2"></div>
+		  	<div class="circle3"></div>
+		</div>
+	</div>
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+	 <!-- Initialize Swiper -->
+ 	
+  	<!-- Flot Charts -->
+	<script src="plugins/c3-chart/c3.min.js"></script>
+	<script src="plugins/c3-chart/d3.min.js"></script>
+	<script src="plugins/c3-chart/c3.custom.js"></script>
+  	<!-- Flot Charts -->
+	<script src="plugins/flot/jquery.flot.min.js"></script>
+	<script src="plugins/flot/jquery.flot.time.min.js"></script>
+	<script src="plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="plugins/flot/jquery.flot.resize.min.js"></script>
+    <!-- Sparkline-->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <script src="js/jquery.jqcandlestick.min.js"></script>
+    <script src="js/candle-stick-ini.js"></script>
+
+	<!-- Template global script file. requared all pages -->
+	<script src="js/app-charts.js"></script>
+	<script src="js/global.script.js"></script>
+     
+
+
+</body>
+
+</html>
